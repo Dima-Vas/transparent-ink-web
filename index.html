@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Ink | Tattoo Consent & Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased flex flex-col min-h-screen">
+
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-xl font-bold text-gray-800">Transparent Ink<span class="text-blue-600">.</span></div>
+        <a href="#join" class="text-sm font-semibold text-gray-600 hover:text-blue-600 transition">Beta Login</a>
+    </nav>
+
+    <header class="container mx-auto px-6 py-20 text-center max-w-4xl flex-grow">
+        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6">
+            Stop chasing deposits and health forms in DMs.
+        </h1>
+        <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+            Get legally compliant, secure PDF consent forms and automated booking in one simple link. Built exclusively for independent tattoo artists.
+        </p>
+        
+        <div id="join" class="max-w-md mx-auto bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+            <h3 class="font-bold text-gray-800 mb-2">We are currently in closed beta!</h3>
+            <p class="text-sm text-gray-500 mb-4">Enter your email to get notified the second we open up 50 new spots.</p>
+            
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="flex flex-col gap-3">
+                <input type="email" name="email" placeholder="artist@studio.com" required 
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button type="submit" 
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition duration-200">
+                    Get Early Access for $99
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <section class="bg-white py-20 border-t border-gray-100">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-bold text-center mb-16">How it works</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">1</div>
+                    <h4 class="font-bold text-lg mb-2">Send Your Link</h4>
+                    <p class="text-gray-600 text-sm">Drop your custom booking link in your bio. Clients click it to start the process.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">2</div>
+                    <h4 class="font-bold text-lg mb-2">They Fill the Form</h4>
+                    <p class="text-gray-600 text-sm">Clients securely submit their medical history, reference photos, and deposit payment.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">3</div>
+                    <h4 class="font-bold text-lg mb-2">You Get the PDF</h4>
+                    <p class="text-gray-600 text-sm">Our system instantly generates a pristine, compliant PDF and emails it directly to you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-100 py-8 mt-auto">
+        <div class="container mx-auto px-6 max-w-5xl flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Transparent Ink. All rights reserved.</p>
+            <a href="mailto:john@transparentink.com" class="hover:text-blue-600 transition duration-200">
+                john@transparentink.com
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
