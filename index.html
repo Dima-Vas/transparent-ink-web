@@ -1,70 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transparent Ink | Tattoo Consent & Booking</title>
+    <title>Elias Vance | Composer & Producer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Importing a sleek, modern font for an artistic vibe */
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap');
+        body { font-family: 'Outfit', sans-serif; }
+        
+        /* Simple reusable glass effect */
+        .glass { 
+            background: rgba(255, 255, 255, 0.02); 
+            backdrop-filter: blur(12px); 
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans antialiased flex flex-col min-h-screen">
+<body class="bg-zinc-950 text-zinc-200 antialiased selection:bg-rose-500 selection:text-white">
 
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div class="text-xl font-bold text-gray-800">Transparent Ink<span class="text-blue-600">.</span></div>
-        <a href="#join" class="text-sm font-semibold text-gray-600 hover:text-blue-600 transition">Beta Login</a>
+    <div class="fixed inset-0 z-[-1]">
+        <img src="https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?q=80&w=2076&auto=format&fit=crop" 
+             alt="Studio Background" 
+             class="w-full h-full object-cover opacity-30">
+        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-zinc-950/40"></div>
+    </div>
+
+    <nav class="fixed w-full z-50 glass border-b border-white/5">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter text-white">ELIAS VANCE<span class="text-rose-500">.</span></div>
+            <div class="space-x-8 text-sm font-semibold hidden md:block text-zinc-400">
+                <a href="#music" class="hover:text-white transition duration-300">Music</a>
+                <a href="#tour" class="hover:text-white transition duration-300">Tour</a>
+                <a href="#contact" class="hover:text-white transition duration-300">Contact</a>
+            </div>
+        </div>
     </nav>
 
-    <header class="container mx-auto px-6 py-20 text-center max-w-4xl flex-grow">
-        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6">
-            Stop chasing deposits and health forms in DMs.
+    <header class="container mx-auto px-6 pt-48 pb-32 text-center max-w-5xl flex-grow min-h-[90vh] flex flex-col justify-center">
+        <p class="text-rose-500 tracking-widest uppercase text-sm font-bold mb-6">New Album Out Now</p>
+        
+        <h1 class="text-7xl md:text-[8rem] leading-none font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-600 mb-8 drop-shadow-lg">
+            MIDNIGHT<br>SYNTHESIS
         </h1>
-        <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            Get legally compliant, secure PDF consent forms and automated booking in one simple link. Built exclusively for independent tattoo artists.
+        
+        <p class="text-xl md:text-2xl text-zinc-400 mb-12 max-w-2xl mx-auto font-light">
+            An immersive journey through analogue synthesizers, driving basslines, and cinematic soundscapes.
         </p>
         
-        <div id="join" class="max-w-md mx-auto bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-            <h3 class="font-bold text-gray-800 mb-2">We are currently in closed beta!</h3>
-            <p class="text-sm text-gray-500 mb-4">Enter your email to get notified the second we open up 50 new spots.</p>
-            
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="flex flex-col gap-3">
-                <input type="email" name="email" placeholder="artist@studio.com" required 
-                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <button type="submit" 
-                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition duration-200">
-                    Get Early Access for $99
-                </button>
-            </form>
+        <div class="flex flex-col sm:flex-row justify-center gap-5 max-w-md mx-auto w-full">
+            <a href="#music" class="bg-rose-600 hover:bg-rose-500 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 hover:scale-105 shadow-[0_0_30px_rgba(225,29,72,0.3)]">
+                Listen on Spotify
+            </a>
+            <a href="#tour" class="glass border border-white/10 hover:bg-white/10 text-white px-8 py-4 rounded-full font-bold transition-all duration-300">
+                View Tour Dates
+            </a>
         </div>
     </header>
 
-    <section class="bg-white py-20 border-t border-gray-100">
-        <div class="container mx-auto px-6 max-w-5xl">
-            <h2 class="text-3xl font-bold text-center mb-16">How it works</h2>
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="text-center">
-                    <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">1</div>
-                    <h4 class="font-bold text-lg mb-2">Send Your Link</h4>
-                    <p class="text-gray-600 text-sm">Drop your custom booking link in your bio. Clients click it to start the process.</p>
+    <section id="tour" class="py-24 border-t border-white/5 bg-zinc-950/60">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-4xl font-black text-center mb-16 text-white tracking-tight">UPCOMING SHOWS</h2>
+            
+            <div class="flex flex-col gap-4">
+                <div class="glass border border-white/5 p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center hover:bg-white/5 transition duration-300 group">
+                    <div class="text-center md:text-left mb-4 md:mb-0 min-w-[100px]">
+                        <div class="text-rose-500 font-bold text-xl">OCT 14</div>
+                        <div class="text-zinc-400 text-sm tracking-widest">2026</div>
+                    </div>
+                    <div class="text-center md:text-left flex-grow md:ml-8">
+                        <h4 class="font-bold text-2xl text-white mb-1">The Wiltern</h4>
+                        <p class="text-zinc-500">Los Angeles, CA</p>
+                    </div>
+                    <button class="mt-6 md:mt-0 px-8 py-3 rounded-full border border-rose-500/50 text-rose-500 group-hover:bg-rose-500 group-hover:text-white transition duration-300 font-bold w-full md:w-auto">
+                        Tickets
+                    </button>
                 </div>
-                <div class="text-center">
-                    <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">2</div>
-                    <h4 class="font-bold text-lg mb-2">They Fill the Form</h4>
-                    <p class="text-gray-600 text-sm">Clients securely submit their medical history, reference photos, and deposit payment.</p>
+                
+                <div class="glass border border-white/5 p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center hover:bg-white/5 transition duration-300 group">
+                    <div class="text-center md:text-left mb-4 md:mb-0 min-w-[100px]">
+                        <div class="text-rose-500 font-bold text-xl">OCT 18</div>
+                        <div class="text-zinc-400 text-sm tracking-widest">2026</div>
+                    </div>
+                    <div class="text-center md:text-left flex-grow md:ml-8">
+                        <h4 class="font-bold text-2xl text-white mb-1">Red Rocks</h4>
+                        <p class="text-zinc-500">Morrison, CO</p>
+                    </div>
+                    <button class="mt-6 md:mt-0 px-8 py-3 rounded-full border border-rose-500/50 text-rose-500 group-hover:bg-rose-500 group-hover:text-white transition duration-300 font-bold w-full md:w-auto">
+                        Tickets
+                    </button>
                 </div>
-                <div class="text-center">
-                    <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">3</div>
-                    <h4 class="font-bold text-lg mb-2">You Get the PDF</h4>
-                    <p class="text-gray-600 text-sm">Our system instantly generates a pristine, compliant PDF and emails it directly to you.</p>
+
+                <div class="glass border border-white/5 p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center bg-black/20">
+                    <div class="text-center md:text-left mb-4 md:mb-0 min-w-[100px] opacity-50">
+                        <div class="text-zinc-600 font-bold text-xl line-through">OCT 22</div>
+                        <div class="text-zinc-600 text-sm tracking-widest">2026</div>
+                    </div>
+                    <div class="text-center md:text-left flex-grow md:ml-8 opacity-50">
+                        <h4 class="font-bold text-2xl text-white mb-1 line-through">Brooklyn Steel</h4>
+                        <p class="text-zinc-500">New York, NY</p>
+                    </div>
+                    <button class="mt-6 md:mt-0 px-8 py-3 rounded-full border border-zinc-800 text-zinc-600 cursor-not-allowed font-bold w-full md:w-auto" disabled>
+                        Sold Out
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-white border-t border-gray-100 py-8 mt-auto">
-        <div class="container mx-auto px-6 max-w-5xl flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> Transparent Ink. All rights reserved.</p>
-            <a href="mailto:john@transparentink.com" class="hover:text-blue-600 transition duration-200">
-                john@transparentink.com
+    <footer id="contact" class="border-t border-white/5 py-16 bg-zinc-950">
+        <div class="container mx-auto px-6 max-w-4xl flex flex-col items-center gap-8 text-sm text-zinc-500">
+            <div class="text-3xl font-black text-white">EV<span class="text-rose-500">.</span></div>
+            
+            <div class="flex gap-8 font-semibold tracking-wide">
+                <a href="#" class="hover:text-rose-500 transition duration-300">INSTAGRAM</a>
+                <a href="#" class="hover:text-rose-500 transition duration-300">SPOTIFY</a>
+                <a href="#" class="hover:text-rose-500 transition duration-300">YOUTUBE</a>
+            </div>
+            
+            <a href="mailto:mgmt@eliasvance.com" class="hover:text-white transition duration-300 text-lg">
+                mgmt@eliasvance.com
             </a>
+            
+            <p class="mt-8">&copy; <script>document.write(new Date().getFullYear())</script> Elias Vance Music. All rights reserved.</p>
         </div>
     </footer>
 
