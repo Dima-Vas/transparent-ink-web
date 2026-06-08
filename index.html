@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elias Vance | Composer & Producer</title>
+    <title>Transparent Ink | Dmytro Vasylkiv</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Importing a sleek, modern font for an artistic vibe */
@@ -20,110 +20,118 @@
 </head>
 <body class="bg-zinc-950 text-zinc-200 antialiased selection:bg-rose-500 selection:text-white">
 
+    <!-- Ambient Background Image with Dark Gradient Overlay -->
     <div class="fixed inset-0 z-[-1]">
-        <img src="https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?q=80&w=2076&auto=format&fit=crop" 
-             alt="Studio Background" 
-             class="w-full h-full object-cover opacity-30">
-        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-zinc-950/40"></div>
+        <!-- Using a sleek, abstract tech/hardware background from Unsplash -->
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop" 
+             alt="Tech Background" 
+             class="w-full h-full object-cover opacity-20">
+        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/90 to-zinc-950/60"></div>
     </div>
 
+    <!-- Minimalist Glass Navigation -->
     <nav class="fixed w-full z-50 glass border-b border-white/5">
         <div class="container mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="text-2xl font-black tracking-tighter text-white">ELIAS VANCE<span class="text-rose-500">.</span></div>
+            <div class="text-2xl font-black tracking-tighter text-white">TRANSPARENT INK<span class="text-rose-500">.</span></div>
             <div class="space-x-8 text-sm font-semibold hidden md:block text-zinc-400">
-                <a href="#music" class="hover:text-white transition duration-300">Music</a>
-                <a href="#tour" class="hover:text-white transition duration-300">Tour</a>
+                <a href="#about" class="hover:text-white transition duration-300">About</a>
+                <a href="#projects" class="hover:text-white transition duration-300">Projects</a>
                 <a href="#contact" class="hover:text-white transition duration-300">Contact</a>
             </div>
         </div>
     </nav>
 
-    <header class="container mx-auto px-6 pt-48 pb-32 text-center max-w-5xl flex-grow min-h-[90vh] flex flex-col justify-center">
-        <p class="text-rose-500 tracking-widest uppercase text-sm font-bold mb-6">New Album Out Now</p>
+    <!-- Impressive Hero Section -->
+    <header id="about" class="container mx-auto px-6 pt-48 pb-32 text-center max-w-5xl flex-grow min-h-[90vh] flex flex-col justify-center">
+        <p class="text-rose-500 tracking-widest uppercase text-sm font-bold mb-6">Dmytro Vasylkiv</p>
         
-        <h1 class="text-7xl md:text-[8rem] leading-none font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-600 mb-8 drop-shadow-lg">
-            MIDNIGHT<br>SYNTHESIS
+        <h1 class="text-6xl md:text-[7rem] leading-none font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-600 mb-8 drop-shadow-lg">
+            ENGINEERING<br>ARCHITECTURES
         </h1>
         
-        <p class="text-xl md:text-2xl text-zinc-400 mb-12 max-w-2xl mx-auto font-light">
-            An immersive journey through analogue synthesizers, driving basslines, and cinematic soundscapes.
+        <p class="text-xl md:text-2xl text-zinc-400 mb-12 max-w-3xl mx-auto font-light">
+            Computer Science Master's student bridging the gap between low-level hardware and secure backend systems. Specializing in Rust, FPGA design, and hardware-software co-design.
         </p>
         
         <div class="flex flex-col sm:flex-row justify-center gap-5 max-w-md mx-auto w-full">
-            <a href="#music" class="bg-rose-600 hover:bg-rose-500 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 hover:scale-105 shadow-[0_0_30px_rgba(225,29,72,0.3)]">
-                Listen on Spotify
+            <a href="#projects" class="bg-rose-600 hover:bg-rose-500 text-white px-8 py-4 rounded-full font-bold transition-all duration-300 hover:scale-105 shadow-[0_0_30px_rgba(225,29,72,0.3)]">
+                View My Work
             </a>
-            <a href="#tour" class="glass border border-white/10 hover:bg-white/10 text-white px-8 py-4 rounded-full font-bold transition-all duration-300">
-                View Tour Dates
+            <a href="https://github.com/" target="_blank" class="glass border border-white/10 hover:bg-white/10 text-white px-8 py-4 rounded-full font-bold transition-all duration-300">
+                GitHub Profile
             </a>
         </div>
     </header>
 
-    <section id="tour" class="py-24 border-t border-white/5 bg-zinc-950/60">
+    <!-- Projects Section (Replaces Tour Dates) -->
+    <section id="projects" class="py-24 border-t border-white/5 bg-zinc-950/60">
         <div class="container mx-auto px-6 max-w-4xl">
-            <h2 class="text-4xl font-black text-center mb-16 text-white tracking-tight">UPCOMING SHOWS</h2>
+            <h2 class="text-4xl font-black text-center mb-16 text-white tracking-tight">FEATURED PROJECTS</h2>
             
             <div class="flex flex-col gap-4">
+                <!-- Project 1 -->
                 <div class="glass border border-white/5 p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center hover:bg-white/5 transition duration-300 group">
                     <div class="text-center md:text-left mb-4 md:mb-0 min-w-[100px]">
-                        <div class="text-rose-500 font-bold text-xl">OCT 14</div>
-                        <div class="text-zinc-400 text-sm tracking-widest">2026</div>
+                        <div class="text-rose-500 font-bold text-xl">RUST</div>
+                        <div class="text-zinc-400 text-sm tracking-widest">BACKEND</div>
                     </div>
                     <div class="text-center md:text-left flex-grow md:ml-8">
-                        <h4 class="font-bold text-2xl text-white mb-1">The Wiltern</h4>
-                        <p class="text-zinc-500">Los Angeles, CA</p>
+                        <h4 class="font-bold text-2xl text-white mb-1">Transparent Ink</h4>
+                        <p class="text-zinc-500 text-sm max-w-lg">Secure service for generating PDF documents from decrypted data, featuring 256-bit encryption key rotation and headless Chrome integration.</p>
                     </div>
                     <button class="mt-6 md:mt-0 px-8 py-3 rounded-full border border-rose-500/50 text-rose-500 group-hover:bg-rose-500 group-hover:text-white transition duration-300 font-bold w-full md:w-auto">
-                        Tickets
+                        Details
                     </button>
                 </div>
                 
+                <!-- Project 2 -->
                 <div class="glass border border-white/5 p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center hover:bg-white/5 transition duration-300 group">
                     <div class="text-center md:text-left mb-4 md:mb-0 min-w-[100px]">
-                        <div class="text-rose-500 font-bold text-xl">OCT 18</div>
-                        <div class="text-zinc-400 text-sm tracking-widest">2026</div>
+                        <div class="text-rose-500 font-bold text-xl">EDGE</div>
+                        <div class="text-zinc-400 text-sm tracking-widest">VISION</div>
                     </div>
                     <div class="text-center md:text-left flex-grow md:ml-8">
-                        <h4 class="font-bold text-2xl text-white mb-1">Red Rocks</h4>
-                        <p class="text-zinc-500">Morrison, CO</p>
+                        <h4 class="font-bold text-2xl text-white mb-1">Embedded ML</h4>
+                        <p class="text-zinc-500 text-sm max-w-lg">Deploying optimized vision models (YOLO, MobileNet) on edge hardware like the Rockchip RV1106 and STM32 microcontrollers.</p>
                     </div>
                     <button class="mt-6 md:mt-0 px-8 py-3 rounded-full border border-rose-500/50 text-rose-500 group-hover:bg-rose-500 group-hover:text-white transition duration-300 font-bold w-full md:w-auto">
-                        Tickets
+                        Details
                     </button>
                 </div>
 
-                <div class="glass border border-white/5 p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center bg-black/20">
-                    <div class="text-center md:text-left mb-4 md:mb-0 min-w-[100px] opacity-50">
-                        <div class="text-zinc-600 font-bold text-xl line-through">OCT 22</div>
-                        <div class="text-zinc-600 text-sm tracking-widest">2026</div>
+                <!-- Project 3 -->
+                <div class="glass border border-white/5 p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center hover:bg-white/5 transition duration-300 group">
+                    <div class="text-center md:text-left mb-4 md:mb-0 min-w-[100px]">
+                        <div class="text-rose-500 font-bold text-xl">3D</div>
+                        <div class="text-zinc-400 text-sm tracking-widest">MFG</div>
                     </div>
-                    <div class="text-center md:text-left flex-grow md:ml-8 opacity-50">
-                        <h4 class="font-bold text-2xl text-white mb-1 line-through">Brooklyn Steel</h4>
-                        <p class="text-zinc-500">New York, NY</p>
+                    <div class="text-center md:text-left flex-grow md:ml-8">
+                        <h4 class="font-bold text-2xl text-white mb-1">Brudyagu.inc</h4>
+                        <p class="text-zinc-500 text-sm max-w-lg">Designing and manufacturing functional parts and interlocking accessories utilizing a Bambu Lab A1 printer ecosystem.</p>
                     </div>
-                    <button class="mt-6 md:mt-0 px-8 py-3 rounded-full border border-zinc-800 text-zinc-600 cursor-not-allowed font-bold w-full md:w-auto" disabled>
-                        Sold Out
+                    <button class="mt-6 md:mt-0 px-8 py-3 rounded-full border border-rose-500/50 text-rose-500 group-hover:bg-rose-500 group-hover:text-white transition duration-300 font-bold w-full md:w-auto">
+                        Visit
                     </button>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Minimalist Footer -->
     <footer id="contact" class="border-t border-white/5 py-16 bg-zinc-950">
         <div class="container mx-auto px-6 max-w-4xl flex flex-col items-center gap-8 text-sm text-zinc-500">
-            <div class="text-3xl font-black text-white">EV<span class="text-rose-500">.</span></div>
+            <div class="text-3xl font-black text-white">TI<span class="text-rose-500">.</span></div>
             
             <div class="flex gap-8 font-semibold tracking-wide">
-                <a href="#" class="hover:text-rose-500 transition duration-300">INSTAGRAM</a>
-                <a href="#" class="hover:text-rose-500 transition duration-300">SPOTIFY</a>
-                <a href="#" class="hover:text-rose-500 transition duration-300">YOUTUBE</a>
+                <a href="#" class="hover:text-rose-500 transition duration-300">GITHUB</a>
+                <a href="#" class="hover:text-rose-500 transition duration-300">LINKEDIN</a>
             </div>
             
-            <a href="mailto:mgmt@eliasvance.com" class="hover:text-white transition duration-300 text-lg">
-                mgmt@eliasvance.com
+            <a href="mailto:contact@transparentink.dev" class="hover:text-white transition duration-300 text-lg">
+                contact@transparentink.dev
             </a>
             
-            <p class="mt-8">&copy; <script>document.write(new Date().getFullYear())</script> Elias Vance Music. All rights reserved.</p>
+            <p class="mt-8 text-center">&copy; <script>document.write(new Date().getFullYear())</script> Dmytro Vasylkiv | Ukraine. All rights reserved.</p>
         </div>
     </footer>
 
